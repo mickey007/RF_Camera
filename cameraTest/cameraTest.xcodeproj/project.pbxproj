@@ -1315,6 +1315,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/cameraTest/AviarySDK\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1342,6 +1343,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/cameraTest/AviarySDK\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
