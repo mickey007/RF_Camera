@@ -457,11 +457,14 @@ NSString *filterName[] = {@"Original",@"LA",@"New York",@"Paris",@"Tokyo",@"Lond
 }
 - (IBAction)filterSelectBtn:(id)sender {
     CGRect frame = self.scrollView.frame;
-    if (frame.origin.y > 364) {//Show
-        frame.origin.y = 364;
+    CGFloat baseY = self.view.frame.size.height - 54 - 64 + 2;
+    
+    
+    if (frame.origin.y > baseY) {//Show
+        frame.origin.y = baseY;
     }
     else {
-        frame.origin.y = 364 + 64;
+        frame.origin.y = baseY + 64;
     }
     [UIView animateWithDuration:0.5 animations:^{
         self.scrollView.frame = frame;

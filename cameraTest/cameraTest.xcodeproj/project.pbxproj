@@ -60,6 +60,7 @@
 		770A0E82155581D700D2B78C /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 770A0E81155581D700D2B78C /* libz.1.2.5.dylib */; };
 		770A0E84155581E700D2B78C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 770A0E83155581E700D2B78C /* libsqlite3.0.dylib */; };
 		770A0E86155581EC00D2B78C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770A0E85155581EC00D2B78C /* CoreData.framework */; };
+		77132644163F749500019CFA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77132643163F749500019CFA /* Default-568h@2x.png */; };
 		7720CE511558CF9800C7E79E /* camera_Icon_flash_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 7720CE4E1558CF9600C7E79E /* camera_Icon_flash_off.png */; };
 		7720CE521558CF9800C7E79E /* camera_Icon_flash_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 7720CE4F1558CF9700C7E79E /* camera_Icon_flash_on.png */; };
 		7720CE541558E00400C7E79E /* camera_Icon_flash_auto.png in Resources */ = {isa = PBXBuildFile; fileRef = 7720CE531558E00400C7E79E /* camera_Icon_flash_auto.png */; };
@@ -258,6 +259,7 @@
 		770A0E81155581D700D2B78C /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		770A0E83155581E700D2B78C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		770A0E85155581EC00D2B78C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		77132643163F749500019CFA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7720CE4E1558CF9600C7E79E /* camera_Icon_flash_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_Icon_flash_off.png; sourceTree = "<group>"; };
 		7720CE4F1558CF9700C7E79E /* camera_Icon_flash_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_Icon_flash_on.png; sourceTree = "<group>"; };
 		7720CE531558E00400C7E79E /* camera_Icon_flash_auto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_Icon_flash_auto.png; sourceTree = "<group>"; };
@@ -485,6 +487,7 @@
 		770A0DF61555783300D2B78C /* cameraTest */ = {
 			isa = PBXGroup;
 			children = (
+				77132643163F749500019CFA /* Default-568h@2x.png */,
 				7730FD7315B1F0BD0061FA06 /* tip.png */,
 				7730FD7015B1EF3D0061FA06 /* Toast+UIView.m */,
 				7730FD7115B1EF3D0061FA06 /* Toast+UIView.h */,
@@ -1045,6 +1048,7 @@
 				7730FDE615B208620061FA06 /* about.html in Resources */,
 				7778BFDD15B46179005E4326 /* CameraBackViewController.xib in Resources */,
 				7778BFE315B46702005E4326 /* CamNavController.xib in Resources */,
+				77132644163F749500019CFA /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
