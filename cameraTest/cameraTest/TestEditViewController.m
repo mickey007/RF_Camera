@@ -138,7 +138,8 @@ NSString *filterName[] = {@"Original",@"LA",@"New York",@"Paris",@"Tokyo",@"Lond
     [[self contentView] addSubview:self.mastView];
     [self setupMenus];
     
-    ISIrisView *irisTempView = [[ISIrisView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    ISIrisView *irisTempView = [[ISIrisView alloc] initWithFrame:self.view.frame];
+    irisTempView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleHeight;
     self.irisView = irisTempView;
     [self.view addSubview:irisTempView];
     [irisTempView release];

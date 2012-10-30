@@ -48,7 +48,15 @@ completedBlock_ = nil;\
     if (self) 
     {
         self.statisIrisView = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)] autorelease];
-        self.statisIrisView.image = [UIImage imageNamed:@"Default.png"];
+        
+        if ([[UIScreen mainScreen] bounds].size.height > 480) {
+            self.statisIrisView.image = [UIImage imageNamed:@"Default-568h"];
+
+        }
+        else {
+            self.statisIrisView.image = [UIImage imageNamed:@"Default"];
+
+        }
         
         CGFloat radius = 600;
         self.clipsToBounds = YES;
