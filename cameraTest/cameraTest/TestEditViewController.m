@@ -265,10 +265,26 @@ NSString *filterName[] = {@"Original",@"LA",@"New York",@"Paris",@"Tokyo",@"Lond
     
     self.cameraTakeBtn.enabled = NO;
     self.cameraRollBtn.enabled = NO;
+    
     [self.irisView closeIrisWithCompleteBlock:^(ISIrisViewAnimation type) {
-        [self.cameraView takeAPhotoWithCompletion:^(UIImage *image) {
+        
+        /*[self.irisView openIrisWithCompleteBlock:^(ISIrisViewAnimation type) {
+            [self.cameraView takeAPhotoWithCompletion:^(UIImage *image) {
+             
+             //[self performSelectorOnMainThread:@selector(openShutterAndPresentAviary:) withObject:image waitUntilDone:NO];
+             
+             
+             }];
             
-            [self performSelectorOnMainThread:@selector(openShutterAndPresentAviary:) withObject:image waitUntilDone:NO];
+            
+        } andDuration:0.1];*/
+
+        
+        
+        
+        [self.cameraView takeAPhotoWithCompletion:^(UIImage *image) {
+            [self openShutterAndPresentAviary:image];
+            //[self performSelectorOnMainThread:@selector(openShutterAndPresentAviary:) withObject:image waitUntilDone:NO];
             
             
         }];
@@ -286,13 +302,13 @@ NSString *filterName[] = {@"Original",@"LA",@"New York",@"Paris",@"Tokyo",@"Lond
 
 - (void)openShutterAndPresentAviary:(UIImage*)image {
     [self.irisView openIrisWithCompleteBlock:^(ISIrisViewAnimation type) {
-        dispatch_async(dispatch_get_main_queue(), ^{
+        //dispatch_async(dispatch_get_main_queue(), ^{
             self.cameraRollBtn.enabled = YES;
             self.cameraTakeBtn.enabled = YES;
             if (image) {
                 [self showAviary:image];
             }
-        });
+       // });
         
         
     } andDuration:0.1];
